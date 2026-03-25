@@ -20,6 +20,10 @@
 
         imports = with config.flake.nixosModules; [
             desktop-i3
+        ]; 
+
+        fonts.packages = with pkgs; [
+            nerd-fonts.hurmit
         ];
     };
 }
