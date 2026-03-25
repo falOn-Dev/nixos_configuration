@@ -1,6 +1,10 @@
 { ... }:
 {
-    flake.homeModules.home-falon-git = { ... }: {
+    flake.homeModules.home-falon-git = { pkgs, ... }: {
+        home.packages = with pkgs; [
+            lazygit
+        ];
+
         programs.git = {
             enable = true;
             userName = "falOn-Dev";
