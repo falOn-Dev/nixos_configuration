@@ -11,6 +11,7 @@
                 home-falon-neovim
                 home-falon-i3
                 home-falon-zsh
+                home-falon-ghostty
             ];
     };
 }
