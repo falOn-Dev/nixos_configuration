@@ -1,6 +1,12 @@
 { ... }:
 {
-	flake.homeModules.home-falon-neovim = { config, ... }: {
+	flake.homeModules.home-falon-neovim = { pkgs, config, ... }: {
+
+        home.packages = with pkgs; [
+            ripgrep
+            fzf
+        ];
+
 		programs.neovim = {
 			enable = true;
 			defaultEditor = true;
