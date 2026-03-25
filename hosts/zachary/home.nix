@@ -8,7 +8,8 @@
             with config.flake.homeModules; [
                 home-falon-base
                 home-falon-git
-		home-falon-neovim
+                home-falon-neovim
+                home-falon-i3
             ];
     };
 }

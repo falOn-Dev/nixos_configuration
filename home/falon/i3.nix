@@ -1,12 +1,12 @@
 { ... }:
 
 {
-    flake.homeModules.falon-i3 = { config, pkgs, ... }: {
+    flake.homeModules.home-falon-i3 = { config, pkgs, ... }: {
         home.packages = with pkgs; [
             ghostty
                 rofi
                 autotiling
-                pywal
+                pywal16
                 feh
         ];
 
