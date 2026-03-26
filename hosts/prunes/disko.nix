@@ -1,7 +1,7 @@
 { ... }:
 
 {
-    flake.nixosModules.disko-prunes = { ... }: {
+    flake.diskoConfigurations.disko-prunes = { ... }: {
         disko.devices = {
             disk = {
                 system = {

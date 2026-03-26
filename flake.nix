@@ -16,6 +16,7 @@
 
             imports = [
                 inputs.home-manager.flakeModules.home-manager
+                inputs.disko.flakeModules.default;
                 (inputs.import-tree ./hosts)
                 (inputs.import-tree ./features)
                 (inputs.import-tree ./home)
