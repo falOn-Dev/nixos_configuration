@@ -16,6 +16,7 @@
         environment.systemPackages = with pkgs; [
             git
             neovim
+            unzip
         ];
 
         imports = with config.flake.nixosModules; [
