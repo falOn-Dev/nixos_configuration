@@ -15,5 +15,27 @@
                 swayidle
                 waybar
         ];
+
+        programs.niri.settings = {
+            prefer-no-csd = true;
+
+            input = {
+                keyboard.xkb.layout = "us";
+                focus-follows-mouse.enable = true;
+            };
+
+            layout = {
+                gaps = 6;
+            };
+
+            binds = {
+                "Mod+Return".action.spawn = "ghostty";
+                "Mod+Space".action.spawn-sh = "rofi -show drun";
+                "Mod+Q".action.close-window = [];
+
+                "Mod+H".action.focus-column.left = [];
+                "Mod+L".action.focus-column.right = [];
+            };
+        };
     };
 }

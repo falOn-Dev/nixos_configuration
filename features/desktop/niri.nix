@@ -1,9 +1,13 @@
 
 { ... }:
 {
-    flake.nixosModules.desktop-niri = { pkgs, ... }: {
+    flake.nixosModules.desktop-niri = { pkgs, inputs, ... }: {
 
-        programs.niri.enable = true
+        nixpkgs.overlays = [ inputs.niri.overlays.niri ];
+
+        programs.niri.enable = true;
+
+        programs.niri.package = pkgs.niri-stable;
 
         services.displayManager.ly.enable = true;
 

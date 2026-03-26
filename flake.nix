@@ -8,6 +8,9 @@
 
         disko.url = "github:nix-community/disko";
         disko.inputs.nixpkgs.follows = "nixpkgs";
+
+        niri.url = "github:sodiboo/niri-flake";
+        niri.inputs.nixpkgs.follows = "nixpkgs";
     };
 
     outputs = inputs:
@@ -17,6 +20,7 @@
             imports = [
                 inputs.home-manager.flakeModules.home-manager
                 inputs.disko.flakeModules.default
+                inputs.niri.nixosModules.niri
                 (inputs.import-tree ./hosts)
                 (inputs.import-tree ./features)
                 (inputs.import-tree ./home)
