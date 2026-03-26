@@ -4,6 +4,7 @@
         system = "x86_64-linux";
 
         modules = with config.flake.nixosModules; [
+            inputs.niri.nixosModules.niri
             inputs.home-manager.nixosModules.home-manager
 
             configuration-prunes
