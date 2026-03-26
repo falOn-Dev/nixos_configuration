@@ -7,7 +7,6 @@
             description = "Falon Clark";
             extraGroups = [ "wheel" "networkmanager" ];
             shell = pkgs.zsh;
-            password = "password";
         };
 
         programs.zsh.enable = true;
