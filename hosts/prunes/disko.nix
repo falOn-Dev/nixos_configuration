@@ -1,7 +1,7 @@
 { ... }:
 
 {
-    flake.diskoConfigurations.disko-prunes = { ... }: {
+    flake.diskoConfigurations.tatiman-prunes = { ... }: {
         disko.devices = {
             disk = {
                 system = {
