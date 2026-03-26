@@ -1,0 +1,108 @@
+building the system configuration...
+these 22 derivations will be built:
+  /nix/store/99fpnvplp9d1vkwg14hslxal83vjpgg9-niri-25.08.drv
+  /nix/store/gmvv95fk82c1nbf3fpmwza2fv5w6njcz-desktops.drv
+  /nix/store/3vskjz0i463cbcbb8kvjd9slngzl10gr-set-environment.drv
+  /nix/store/p8x0glbq01byhlmpqrm9g61gbkpw7z92-system-path.drv
+  /nix/store/6hxqj7zgkmw04lcbc28p5ajh4q2igdy3-X-Restart-Triggers-polkit.drv
+  /nix/store/qmcic511h06f1g710fgdwlf9gpdv5zd0-unit-polkit.service.drv
+  /nix/store/nc266jrdi3pnh4jzqza4bbc4kw7gfd27-config.kdl.drv
+  /nix/store/6f1syq01yn4bxs47qdpgjh7v9r8qlnsd-home-manager-files.drv
+  /nix/store/pki90lfnx5s0s3gy6447cb4g9950yqdg-home-manager-generation.drv
+  /nix/store/slpqmfw3b6alka3i5ingcpkb7nvhax1q-unit-home-manager-falon.service.drv
+  /nix/store/gl0fbg370r06nw463xdzs5liyw5ayxnn-dbus-1.drv
+  /nix/store/dv2x0b0pdyiklxqvr3rijqya97xdaihj-X-Restart-Triggers-dbus.drv
+  /nix/store/vr23acxgy4jxw113m5jdlzzyamydw5vw-unit-dbus.service.drv
+  /nix/store/b3nnxgayirhgzlqqcz3hrm4yn2i9iw2v-system-units.drv
+  /nix/store/c4ingvxxj2h6lbv9n6l1yqdkig7d9j2z-etc-pam-environment.drv
+  /nix/store/ibyjvi80fc9g8gzkbylbb2ghwx9zm22z-config.ini.drv
+  /nix/store/j4r1a285nhfc8zw40fqd0mjkn8z52d9c-etc-zshenv.drv
+  /nix/store/shnfhgxa0z1a2snz27ish11lp3yr019b-etc-profile.drv
+  /nix/store/g91rifahi02q14jgz2crcikp3hzrr3pd-unit-dbus.service.drv
+  /nix/store/zv96nd4lkmxj03li6way7g7rhqfkkn5g-user-units.drv
+  /nix/store/40irysv0gid8wvasgydb22z12579s3d5-etc.drv
+  /nix/store/aiqrl5awknpsfcm9k3x1lw5v9gb1n8z8-nixos-system-tatiman-prunes-25.11.20251130.871b9fd.drv
+building '/nix/store/99fpnvplp9d1vkwg14hslxal83vjpgg9-niri-25.08.drv'...
+error: Cannot build '/nix/store/99fpnvplp9d1vkwg14hslxal83vjpgg9-niri-25.08.drv'.
+       Reason: builder failed with exit code 101.
+       Output paths:
+         /nix/store/3lw2lh1nacbnga4jzsix39ybp6zs952v-niri-25.08-doc
+         /nix/store/53mz99ngid5gp0ys9mjvgi0wk3zxq426-niri-25.08
+       Last 25 log lines:
+       >  116:     0x5555560dbb2a - __rust_begin_short_backtrace<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>
+       >                                at /rustc-1.91.1-src/library/std/src/sys/backtrace.rs:158:18
+       >  117:     0x5555560dae2d - {closure#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>
+       >                                at /rustc-1.91.1-src/library/std/src/thread/mod.rs:559:17
+       >  118:     0x5555560dae2d - call_once<(), std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>
+       >                                at /rustc-1.91.1-src/library/core/src/panic/unwind_safe.rs:274:9
+       >  119:     0x5555560dae2d - do_call<core::panic::unwind_safe::AssertUnwindSafe<std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>, ()>
+       >                                at /rustc-1.91.1-src/library/std/src/panicking.rs:590:40
+       >  120:     0x5555560dae2d - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>>
+       >                                at /rustc-1.91.1-src/library/std/src/panicking.rs:553:19
+       >  121:     0x5555560dae2d - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>, ()>
+       >                                at /rustc-1.91.1-src/library/std/src/panic.rs:359:14
+       >  122:     0x5555560dae2d - {closure#1}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>
+       >                                at /rustc-1.91.1-src/library/std/src/thread/mod.rs:557:30
+       >  123:     0x5555560dae2d - call_once<std::thread::{impl#0}::spawn_unchecked_::{closure_env#1}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>, ()>
+       >                                at /rustc-1.91.1-src/library/core/src/ops/function.rs:250:5
+       >  124:     0x5555562dcba7 - std::sys::thread::unix::Thread::new::thread_start::he6fbaf4c507560ed
+       >  125:     0x7ffff749a97a - <unknown>
+       >  126:     0x7ffff7522d2c - <unknown>
+       >  127:                0x0 - <unknown>
+       > thread caused non-unwinding panic. aborting.
+       > error: test failed, to rerun pass `--lib`
+       >
+       > Caused by:
+       >   process didn't exit successfully: `/build/source/target/x86_64-unknown-linux-gnu/release/deps/niri-7747c4a7635339df '--skip=::egl'` (signal: 6, SIGABRT: process abort signal)
+       For full logs, run:
+         nix log /nix/store/99fpnvplp9d1vkwg14hslxal83vjpgg9-niri-25.08.drv
+error: Cannot build '/nix/store/99fpnvplp9d1vkwg14hslxal83vjpgg9-niri-25.08.drv'.
+       Reason: builder failed with exit code 101.
+       Output paths:
+         /nix/store/3lw2lh1nacbnga4jzsix39ybp6zs952v-niri-25.08-doc
+         /nix/store/53mz99ngid5gp0ys9mjvgi0wk3zxq426-niri-25.08
+       Last 25 log lines:
+       >  116:     0x5555560dbb2a - __rust_begin_short_backtrace<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>
+       >                                at /rustc-1.91.1-src/library/std/src/sys/backtrace.rs:158:18
+       >  117:     0x5555560dae2d - {closure#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>
+       >                                at /rustc-1.91.1-src/library/std/src/thread/mod.rs:559:17
+       >  118:     0x5555560dae2d - call_once<(), std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>
+       >                                at /rustc-1.91.1-src/library/core/src/panic/unwind_safe.rs:274:9
+       >  119:     0x5555560dae2d - do_call<core::panic::unwind_safe::AssertUnwindSafe<std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>, ()>
+       >                                at /rustc-1.91.1-src/library/std/src/panicking.rs:590:40
+       >  120:     0x5555560dae2d - catch_unwind<(), core::panic::unwind_safe::AssertUnwindSafe<std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>>
+       >                                at /rustc-1.91.1-src/library/std/src/panicking.rs:553:19
+       >  121:     0x5555560dae2d - catch_unwind<core::panic::unwind_safe::AssertUnwindSafe<std::thread::{impl#0}::spawn_unchecked_::{closure#1}::{closure_env#0}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>>, ()>
+       >                                at /rustc-1.91.1-src/library/std/src/panic.rs:359:14
+       >  122:     0x5555560dae2d - {closure#1}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>
+       >                                at /rustc-1.91.1-src/library/std/src/thread/mod.rs:557:30
+       >  123:     0x5555560dae2d - call_once<std::thread::{impl#0}::spawn_unchecked_::{closure_env#1}<rayon_core::registry::{impl#2}::spawn::{closure_env#0}, ()>, ()>
+       >                                at /rustc-1.91.1-src/library/core/src/ops/function.rs:250:5
+       >  124:     0x5555562dcba7 - std::sys::thread::unix::Thread::new::thread_start::he6fbaf4c507560ed
+       >  125:     0x7ffff749a97a - <unknown>
+       >  126:     0x7ffff7522d2c - <unknown>
+       >  127:                0x0 - <unknown>
+       > thread caused non-unwinding panic. aborting.
+       > error: test failed, to rerun pass `--lib`
+       >
+       > Caused by:
+       >   process didn't exit successfully: `/build/source/target/x86_64-unknown-linux-gnu/release/deps/niri-7747c4a7635339df '--skip=::egl'` (signal: 6, SIGABRT: process abort signal)
+       For full logs, run:
+         nix log /nix/store/99fpnvplp9d1vkwg14hslxal83vjpgg9-niri-25.08.drv
+error: Cannot build '/nix/store/nc266jrdi3pnh4jzqza4bbc4kw7gfd27-config.kdl.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/ziq9habx22628pkg4w0w15qcfhq3flgi-config.kdl
+error: Cannot build '/nix/store/gmvv95fk82c1nbf3fpmwza2fv5w6njcz-desktops.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/fn74l767g0c8q62yn9jjghhn2vxwbw3w-desktops
+error: Cannot build '/nix/store/p8x0glbq01byhlmpqrm9g61gbkpw7z92-system-path.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/n3hc5wg750kk6shihjk773i1p3yzivrf-system-path
+error: Cannot build '/nix/store/aiqrl5awknpsfcm9k3x1lw5v9gb1n8z8-nixos-system-tatiman-prunes-25.11.20251130.871b9fd.drv'.
+       Reason: 1 dependency failed.
+       Output paths:
+         /nix/store/f12fh5zhyffgk9ikic2f57lzq5wm9g83-nixos-system-tatiman-prunes-25.11.20251130.871b9fd
+Command 'nix --extra-experimental-features 'nix-command flakes' build --print-out-paths '.#nixosConfigurations."tatiman-prunes".config.system.build.toplevel' --no-link' returned non-zero exit status 1.
