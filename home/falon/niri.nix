@@ -30,11 +30,8 @@
 
             binds = {
                 "Mod+Return".action.spawn = "ghostty";
-                "Mod+Space".action.spawn-sh = "rofi -show drun";
+                "Mod+Space".action.spawn-sh = [ "rofi" "-show" "drun" ];
                 "Mod+Q".action.close-window = [];
-
-                "Mod+H".action.focus-column.left = [];
-                "Mod+L".action.focus-column.right = [];
             };
         };
     };

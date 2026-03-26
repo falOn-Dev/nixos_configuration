@@ -11,6 +11,8 @@
 
         system.stateVersion = "25.11";
 
+        nix.settings.experimental-features = "nix-command flakes";
+
         programs.firefox.enable = true;
 
         environment.systemPackages = with pkgs; [
