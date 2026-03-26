@@ -15,7 +15,7 @@
 		};  
 
 		xdg.configFile."nvim" = {
-			source = config.lib.file.mkOutOfStoreSymlink "/home/falon/dotfiles/dot_config/nvim";
+			source = config.lib.file.mkOutOfStoreSymlink "/home/falon/dotfiles/dot_config/nvim-config";
 			recursive = true;
 		};
 	};

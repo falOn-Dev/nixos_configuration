@@ -8,6 +8,7 @@
 
             configuration-prunes
             hardware-prunes
+	    home-prunes
             user-falon
 
         ];

@@ -16,9 +16,13 @@
         environment.systemPackages = with pkgs; [
             git
             neovim
+            gcc
+            rustc
+            cargo
         ];
 
         imports = with config.flake.nixosModules; [
+            desktop-niri
         ];
     };
 }

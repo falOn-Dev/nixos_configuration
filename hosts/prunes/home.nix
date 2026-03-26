@@ -7,6 +7,9 @@
         home-manager.users.falon.imports =
             with config.flake.homeModules; [
                 home-falon-base
+                home-falon-git
+                home-falon-neovim
+                home-falon-niri
             ];
     };
 }
