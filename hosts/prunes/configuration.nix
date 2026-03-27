@@ -6,10 +6,16 @@
         networking.hostName = "tatiman-prunes";
         networking.networkmanager.enable = true;
 
+        hardware.bluetooth.enable = true;
+
         boot.loader.systemd-boot.enable = true;
         boot.loader.efi.canTouchEfiVariables = true;
 
         system.stateVersion = "25.11";
+
+        nixpkgs.config.allowUnfree = true;
+
+        nix.settings.experimental-features = "nix-command flakes";
 
         programs.firefox.enable = true;
 
@@ -23,6 +29,10 @@
 
         imports = with config.flake.nixosModules; [
             desktop-niri
+        ];
+
+        fonts.packages = with pkgs; [
+            nerd-fonts.hurmit
         ];
     };
 }

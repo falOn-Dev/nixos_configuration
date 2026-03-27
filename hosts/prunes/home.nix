@@ -1,6 +1,6 @@
 { config, ... }:
 {
-    flake.nixosModules.home-prunes = { ... }: {
+    flake.nixosModules.home-prunes = { pkgs, ... }: {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
 
@@ -10,6 +10,8 @@
                 home-falon-git
                 home-falon-neovim
                 home-falon-niri
+                home-falon-zsh
+                home-falon-ghostty
             ];
     };
 }

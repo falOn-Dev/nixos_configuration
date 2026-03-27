@@ -13,6 +13,7 @@
 
             configuration-prunes
             hardware-prunes
+            nvidia-prunes
             home-prunes
             user-falon
 
