@@ -17,6 +17,7 @@
             shellAliases = {
                 ll = "eza -al --icons";
                 ls = "eza";
+                cd = "z";
             };
 
             enableCompletion = true;
@@ -25,8 +26,8 @@
             autosuggestion = {
                 enable = true;
                 strategy = [
+                    "history"
                     "completion"
-                        "history"
                 ];
             };
 
@@ -37,6 +38,8 @@
 
             initExtra = ''
                 eval "$(zoxide init zsh)"
+
+                bindkey '^F' autosuggest-accept
             '';
         };
 

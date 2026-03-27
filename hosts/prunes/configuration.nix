@@ -25,6 +25,7 @@
             rustc
             cargo
             unzip
+            psmisc
             zip
         ];
 
