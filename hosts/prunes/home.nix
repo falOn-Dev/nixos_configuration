@@ -12,6 +12,7 @@
                 home-falon-niri
                 home-falon-zsh
                 home-falon-ghostty
+                home-falon-firefox-nvidia
             ];
     };
 }
