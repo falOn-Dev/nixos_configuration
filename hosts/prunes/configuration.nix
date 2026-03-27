@@ -24,6 +24,8 @@
             gcc
             rustc
             cargo
+            unzip
+            zip
         ];
 
         imports = with config.flake.nixosModules; [
