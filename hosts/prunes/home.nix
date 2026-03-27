@@ -13,6 +13,7 @@
                 home-falon-zsh
                 home-falon-ghostty
                 home-falon-firefox-nvidia
+                home-falon-discord
             ];
     };
 }
