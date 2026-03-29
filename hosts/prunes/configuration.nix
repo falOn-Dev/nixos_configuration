@@ -5,6 +5,9 @@
     {
         networking.hostName = "tatiman-prunes";
         networking.networkmanager.enable = true;
+        networking.networkmagaer.plugins = with pkgs; [
+            networkmanager-openvpn
+        ];
 
         hardware.bluetooth.enable = true;
 
@@ -27,6 +30,9 @@
             unzip
             psmisc
             zip
+            networkmanager
+            networkmanager-openvpn
+            openvpn
         ];
 
         imports = with config.flake.nixosModules; [
