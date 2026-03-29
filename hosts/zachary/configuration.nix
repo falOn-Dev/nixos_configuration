@@ -19,6 +19,9 @@
             git
             neovim
             unzip
+            networkmanager
+            networkmanager-openvpn
+            openvpn
         ];
 
         imports = with config.flake.nixosModules; [
