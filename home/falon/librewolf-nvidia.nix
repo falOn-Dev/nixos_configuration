@@ -4,7 +4,7 @@
         programs.librewolf.enable = true;
 
         xdg.desktopEntries.librewolf-nvidia = {
-            name = "Firefox (NVIDIA)";
+            name = "LibreWolf (NVIDIA)";
             exec = "nvidia-offload librewolf %u";
             terminal = false;
             categories = [ "Network" "WebBrowser" ];
