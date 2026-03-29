@@ -51,6 +51,11 @@
                 };
             };
 
+            spawn-at-startup = [
+                { argv = ["waybar"]; }
+                { argv = ["swaybg" "-i" "~/.config/walls/selected"]; }
+            ];
+
             binds = {
                 "Mod+Return".action.spawn = "ghostty";
                 "Mod+Space".action.spawn = [ "rofi" "-show" "drun" ];
@@ -60,7 +65,7 @@
                 "Mod+L".action.focus-column-right = [];
                 "Mod+J".action.focus-window-or-workspace-down = [];
                 "Mod+K".action.focus-window-or-workspace-up = [];
-                
+                 
                 "Mod+Shift+H".action.move-column-left = [];
                 "Mod+Shift+L".action.move-column-right = [];
                 "Mod+Shift+J".action.move-column-to-workspace-down = [];
