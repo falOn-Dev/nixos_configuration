@@ -59,6 +59,7 @@
             binds = {
                 "Mod+Return".action.spawn = "ghostty";
                 "Mod+Space".action.spawn = [ "rofi" "-show" "drun" ];
+                "Mod+B".action.spawn = [ "nvidia-offload" "librewolf" ];
                 "Mod+Q".action.close-window = [];
 
                 "Mod+H".action.focus-column-left = [];
