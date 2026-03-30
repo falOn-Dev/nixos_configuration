@@ -5,7 +5,7 @@
     {
         networking.hostName = "tatiman-prunes";
         networking.networkmanager.enable = true;
-        networking.networkmagaer.plugins = with pkgs; [
+        networking.networkmanager.plugins = with pkgs; [
             networkmanager-openvpn
         ];
 
@@ -17,6 +17,7 @@
         system.stateVersion = "25.11";
 
         nixpkgs.config.allowUnfree = true;
+        time.timeZone = "America/New_York";
 
         nix.settings.experimental-features = "nix-command flakes";
 
