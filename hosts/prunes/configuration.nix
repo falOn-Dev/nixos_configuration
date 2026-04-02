@@ -38,6 +38,7 @@
 
         imports = with config.flake.nixosModules; [
             desktop-niri
+            app-steam
         ];
 
         fonts.packages = with pkgs; [
