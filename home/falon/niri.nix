@@ -13,7 +13,12 @@
                 mako
                 swayidle
                 waybar
+                libnotify
+                wl-clipboard
+                cliphist
         ];
+
+        services.cliphist.enable = true;
 
         programs.niri.settings = {
             prefer-no-csd = true;
@@ -73,6 +78,7 @@
                 "Mod+Shift+K".action.move-column-to-workspace-up = [];
 
                 "Mod+Shift+P".action.spawn-sh = "~/scripts/wallpaper_selector.sh";
+                "Mod+Shift+S".action.spawn-sh = "~/scripts/screenshot.sh";
 
                 "Mod+Alt+H".action.focus-monitor-left = [];
                 "Mod+Alt+L".action.focus-monitor-right = [];
@@ -82,6 +88,7 @@
 
                 "Mod+O".action.toggle-overview = [];
                 "Mod+F".action.maximize-column = [];
+                "Mod+Shift+F".action.fullscreen-window = [];
 
                 "Mod+1".action.focus-workspace = 1;
                 "Mod+2".action.focus-workspace = 2;

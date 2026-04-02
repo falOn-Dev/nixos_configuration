@@ -2,6 +2,7 @@
 {
     flake.nixosModules.nvidia-prunes = { pkgs, inputs, ... }: {
         hardware.graphics.enable = true;
+        hardware.graphics.enable32Bit = true;
         services.xserver.videoDrivers = [ "nvidia" "modesetting" ];
 
         hardware.nvidia.open = true;

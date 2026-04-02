@@ -6,8 +6,13 @@
         home.stateVersion = "25.11";
 
         home.packages = with pkgs; [
+            zellij
             bluetui
             networkmanagerapplet
+            spotify
+            bambu-studio
+            pavucontrol
+            zoom
         ];
 
     };

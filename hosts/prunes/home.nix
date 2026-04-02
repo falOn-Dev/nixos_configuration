@@ -15,6 +15,7 @@
                 home-falon-librewolf-nvidia
                 home-falon-discord
                 home-falon-pywal
+                home-falon-steam
             ];
     };
 }
