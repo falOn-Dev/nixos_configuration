@@ -1,6 +1,6 @@
 { config, ... }:
 {
-    flake.nixosModules.home-prunes = { pkgs, ... }: {
+    flake.nixosModules.home-caroline = { pkgs, ... }: {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
 
