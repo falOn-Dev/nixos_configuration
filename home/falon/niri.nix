@@ -80,6 +80,8 @@
                 "Mod+Shift+P".action.spawn-sh = "~/scripts/wallpaper_selector.sh";
                 "Mod+Shift+S".action.spawn-sh = "~/scripts/screenshot.sh";
 
+                "Mod+V".action.spawn = ["rofi" "-modi" "clipboard:/home/falon/scripts/cliphist-rofi-img.sh" "-show" "clipboard" "-show-icons"];
+
                 "Mod+Alt+H".action.focus-monitor-left = [];
                 "Mod+Alt+L".action.focus-monitor-right = [];
 
