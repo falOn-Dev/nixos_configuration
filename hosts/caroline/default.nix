@@ -10,6 +10,9 @@
         modules = with config.flake.nixosModules; [
             inputs.niri.nixosModules.niri
             inputs.home-manager.nixosModules.home-manager
+            inputs.disko.nixosModules.disko
+
+            config.flake.diskoConfigurations.tatiman-caroline
 
             configuration-caroline
             hardware-caroline
