@@ -34,6 +34,11 @@
             networkmanager
             networkmanager-openvpn
             openvpn
+            wget
+            openssl
+            qbittorrent
+            wineWowPackages.stable
+            winetricks
         ];
 
         imports = with config.flake.nixosModules; [

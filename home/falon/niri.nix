@@ -59,6 +59,8 @@
             spawn-at-startup = [
                 { argv = ["waybar"]; }
                 { argv = ["swaybg" "-i" "~/.config/walls/selected"]; }
+                { argv = ["wl-paste" "--type" "text" "--watch" "cliphist" "store"]; }
+                { argv = ["wl-paste" "--type" "image" "--watch" "cliphist" "store"]; }
             ];
 
             binds = {

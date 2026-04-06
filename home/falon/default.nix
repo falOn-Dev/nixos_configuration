@@ -12,7 +12,7 @@
             spotify
             bambu-studio
             pavucontrol
-            zoom
+            zoom-us
         ];
 
     };

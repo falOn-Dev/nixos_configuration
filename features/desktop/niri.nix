@@ -12,9 +12,18 @@
 
         xdg.portal = {
             enable = true;
-            extraPortals = [
-                pkgs.xdg-desktop-portal-gtk
+
+            extraPortals = with pkgs; [
+                xdg-desktop-portal-gtk
+                    xdg-desktop-portal-gnome
             ];
+
+            config = {
+                common = {
+                    default = [ "gtk" ];
+                    "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
+                };
+            };
         };
 
         programs.thunar = {
@@ -32,7 +41,10 @@
 
         environment.systemPackages = with pkgs; [
             xwayland-satellite
-            wl-clipboard
+            wl-clipboard 
+            xdg-desktop-portal
+            xdg-desktop-portal-gtk
+            xdg-desktop-portal-gnome
         ];
     };
 }
